@@ -14,3 +14,8 @@ test('should return the number itself if only one number is provided', () => {
 test('should return the sum of two comma-separated numbers', () => {
     expect(add("1,5")).toBe(6);
 });
+
+//Handle any amount of comma-separated numbers
+test('should return the sum of any amount of comma-separated numbers', () => {
+    expect(add("1,2,3,4")).toBe(10);
+});
